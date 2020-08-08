@@ -21,6 +21,7 @@ steps:
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=${_ZONE}'
   - 'CLOUDSDK_CONTAINER_CLUSTER=${_GKE_CLUSTER}'
+  - 'ENV=PROD'
   
 substitutions:
     #GCP Specific configuration. Please DON'T change anything
@@ -34,7 +35,7 @@ substitutions:
     _REPO_NAME: demo-gcp
     
     # Developers ONLY change
-    _VERSION: v9
+    _VERSION: v10
     
 options:
     substitution_option: 'ALLOW_LOOSE'
