@@ -5,7 +5,7 @@ steps:
 
 #Build the image 
 - name: 'gcr.io/sumhr-1501040763429/docker-compose'
-  args: ['docker-compose', '-f', 'docker-compose.yml', '-f',  'docker-compose.prod.yml' , 'build']
+  args: ['-f', 'docker-compose.yml', '-f',  'docker-compose.prod.yml' , 'build']
 
 #Push the image  
 - name: 'gcr.io/cloud-builders/docker'
