@@ -1,7 +1,7 @@
 version: "2"
 services:
  demo-gcp:
-   image: gcr.io/sumhr-1501040763429/demo-gcp:v7
-   command: node server.js
+   image: gcr.io/sumhr-1501040763429/demo-gcp:v8
+   command: touch temp.txt
    environment:
      - NODE_ENV=PROD
