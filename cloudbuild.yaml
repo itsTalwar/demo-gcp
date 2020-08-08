@@ -19,7 +19,7 @@ steps:
   - 'deployment/${_DEPLOYMENTNAME}'
   - '${_CONTAINERNAME}=gcr.io/${_PROJECT}/${_CONTAINERNAME}:${_VERSION}'
   - --namespace
-  - demo-gcp
+  - gitlab-managed-apps
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=${_ZONE}'
   - 'CLOUDSDK_CONTAINER_CLUSTER=${_GKE_CLUSTER}'
@@ -31,7 +31,7 @@ substitutions:
     _GKE_CLUSTER: sumhr-k8	
     
     #Repository Specific configuration. DevOps can change this settings
-    _DEPLOYMENTNAME: sumhr-1501040763429
+    _DEPLOYMENTNAME: sumhr-k8
     _CONTAINERNAME: demo-gcp
     _REPO_NAME: demo-gcp
     
