@@ -24,7 +24,7 @@ steps:
   
 substitutions:
     #GCP Specific configuration. Please DON'T change anything
-    _PROJECT: sumHr
+    _PROJECT: sumhr-1501040763429
     _ZONE: asia-southeast1-a	
     _GKE_CLUSTER: sumhr-k8	
     
