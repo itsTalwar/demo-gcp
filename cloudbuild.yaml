@@ -34,7 +34,7 @@ substitutions:
     _REPO_NAME: demo-gcp
     
     # Developers ONLY change
-    _VERSION: v6
+    _VERSION: v7
     
 options:
     substitution_option: 'ALLOW_LOOSE'
