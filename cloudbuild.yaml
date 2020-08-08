@@ -31,7 +31,7 @@ substitutions:
     _GKE_CLUSTER: sumhr-k8	
     
     #Repository Specific configuration. DevOps can change this settings
-    _DEPLOYMENTNAME: sumhr-k8
+    _DEPLOYMENTNAME: sumhr-1501040763429
     _CONTAINERNAME: demo-gcp
     _REPO_NAME: demo-gcp
     
