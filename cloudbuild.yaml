@@ -5,7 +5,7 @@ steps:
 
 #Build the image 
 - name: 'gcr.io/sumhr-1501040763429/docker-compose'
-  args: ['build','-f', 'docker-compose.yml', '-f' , 'docker-compose.prod.yml', '-t','gcr.io/${_PROJECT}/${_CONTAINERNAME}:${_VERSION}','.']
+  args: ['docker-compose', '-f', 'docker-compose.yml', '-f',  'docker-compose.prod.yml' , 'build']
 
 #Push the image  
 - name: 'gcr.io/cloud-builders/docker'
@@ -34,7 +34,7 @@ substitutions:
     _REPO_NAME: demo-gcp
     
     # Developers ONLY change
-    _VERSION: v4.0
+    _VERSION: v5
     
 options:
     substitution_option: 'ALLOW_LOOSE'
