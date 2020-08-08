@@ -1,7 +1,7 @@
 version: "2"
 services:
  demo-gcp:
-   image: gcr.io/sumhr-1501040763429/demo-gcp:v5
+   image: gcr.io/sumhr-1501040763429/demo-gcp:v6
    command: node server.js
    environment:
      - NODE_ENV=PROD
