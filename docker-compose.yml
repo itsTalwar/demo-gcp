@@ -1,0 +1,8 @@
+version: "1"
+services:
+  demo-gcp:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "3009:3009"

@@ -1,0 +1,6 @@
+version: "1"
+services:
+ demo-gcp:
+   command: node server.js
+   environment:
+     - NODE_ENV=PROD

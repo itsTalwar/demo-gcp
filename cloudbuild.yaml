@@ -4,8 +4,8 @@ steps:
   args: ['clone','https://github.com/itsTalwar/${_REPO_NAME}']
 
 #Build the image 
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['build',' --build-arg', 'env=PROD', '-t','gcr.io/${_PROJECT}/${_CONTAINERNAME}:${_VERSION}','.']
+- name: 'gcr.io/sumhr-1501040763429/docker-compose'
+  args: ['build','-f', 'docker-compose.yml', '-f' , 'docker-compose.prod.yml', '-t','gcr.io/${_PROJECT}/${_CONTAINERNAME}:${_VERSION}','.']
 
 #Push the image  
 - name: 'gcr.io/cloud-builders/docker'
