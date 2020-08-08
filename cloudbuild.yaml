@@ -19,7 +19,7 @@ steps:
   - 'deployment/${_DEPLOYMENTNAME}'
   - '${_CONTAINERNAME}=gcr.io/${_PROJECT}/${_CONTAINERNAME}:${_VERSION}'
   - --namespace
-  - gitlab-managed-apps
+  - demo-gcp
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=${_ZONE}'
   - 'CLOUDSDK_CONTAINER_CLUSTER=${_GKE_CLUSTER}'
